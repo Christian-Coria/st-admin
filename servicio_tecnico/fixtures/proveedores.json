@@ -1,0 +1,202 @@
+[
+{
+    "model": "servicio_tecnico.proveedores",
+    "pk": 1,
+    "fields": {
+        "nombre": "Mundo Parts",
+        "telefono": "+5493518074792",
+        "tecnico": 1,
+        "direccion": "La Rioja 345"
+    }
+},
+{
+    "model": "servicio_tecnico.proveedores",
+    "pk": 2,
+    "fields": {
+        "nombre": "Procell Repuestos (Ulises)",
+        "telefono": "+5493517320240",
+        "tecnico": 1,
+        "direccion": "La Rioja 517"
+    }
+},
+{
+    "model": "servicio_tecnico.proveedores",
+    "pk": 3,
+    "fields": {
+        "nombre": "Guille",
+        "telefono": "+5493513100700",
+        "tecnico": 1,
+        "direccion": "Galeria Norte"
+    }
+},
+{
+    "model": "servicio_tecnico.proveedores",
+    "pk": 4,
+    "fields": {
+        "nombre": "RepCelCor (Angel)",
+        "telefono": "+5493512832529",
+        "tecnico": 1,
+        "direccion": "cordoba"
+    }
+},
+{
+    "model": "servicio_tecnico.proveedores",
+    "pk": 5,
+    "fields": {
+        "nombre": "Wp Point",
+        "telefono": "+5493516166163",
+        "tecnico": 1,
+        "direccion": "sucre 249"
+    }
+},
+{
+    "model": "servicio_tecnico.proveedores",
+    "pk": 6,
+    "fields": {
+        "nombre": "Bunker",
+        "telefono": "+5493512132943",
+        "tecnico": 1,
+        "direccion": "Tucuman 394 cordoba"
+    }
+},
+{
+    "model": "servicio_tecnico.proveedores",
+    "pk": 7,
+    "fields": {
+        "nombre": "DioTecno (Pipi)",
+        "telefono": "+5493512349841",
+        "tecnico": 1,
+        "direccion": "Av General Paz 426"
+    }
+},
+{
+    "model": "servicio_tecnico.proveedores",
+    "pk": 8,
+    "fields": {
+        "nombre": "Procell (Maricel acc)",
+        "telefono": "+5493512643974",
+        "tecnico": 1,
+        "direccion": "Rivera Indarte 2166 Cordoba"
+    }
+},
+{
+    "model": "servicio_tecnico.proveedores",
+    "pk": 9,
+    "fields": {
+        "nombre": "Griffin",
+        "telefono": "+5493516571051",
+        "tecnico": 1,
+        "direccion": "La Riloja 101"
+    }
+},
+{
+    "model": "servicio_tecnico.proveedores",
+    "pk": 10,
+    "fields": {
+        "nombre": "TecnoBoss Repuestos",
+        "telefono": "+5493513556005",
+        "tecnico": 1,
+        "direccion": "Av Colon 840 Cordoba"
+    }
+},
+{
+    "model": "servicio_tecnico.proveedores",
+    "pk": 11,
+    "fields": {
+        "nombre": "TecnoBoss Accesorios",
+        "telefono": "+543517518665",
+        "tecnico": 1,
+        "direccion": "Av Colon 840 Cordoba"
+    }
+},
+{
+    "model": "servicio_tecnico.proveedores",
+    "pk": 12,
+    "fields": {
+        "nombre": "Vm Importaciones (equipos)",
+        "telefono": "+5493515995223",
+        "tecnico": 1,
+        "direccion": "Nueva Cordoba"
+    }
+},
+{
+    "model": "servicio_tecnico.proveedores",
+    "pk": 13,
+    "fields": {
+        "nombre": "Cell Parts",
+        "telefono": "+5493516805832",
+        "tecnico": 1,
+        "direccion": "Cordoba"
+    }
+},
+{
+    "model": "servicio_tecnico.proveedores",
+    "pk": 14,
+    "fields": {
+        "nombre": "Importech (marcos)",
+        "telefono": "+5493513564720",
+        "tecnico": 1,
+        "direccion": "La Rioja y Tucuman"
+    }
+},
+{
+    "model": "servicio_tecnico.proveedores",
+    "pk": 15,
+    "fields": {
+        "nombre": "Repuestos CS",
+        "telefono": "+5493515144697",
+        "tecnico": 1,
+        "direccion": "27 de Abril 664 Cordoba"
+    }
+},
+{
+    "model": "servicio_tecnico.proveedores",
+    "pk": 16,
+    "fields": {
+        "nombre": "Cordoba Centro Celulares (Tulian)",
+        "telefono": "+5493517640198",
+        "tecnico": 1,
+        "direccion": "La Rioja 120 Cordoba"
+    }
+},
+{
+    "model": "servicio_tecnico.proveedores",
+    "pk": 17,
+    "fields": {
+        "nombre": "I2C Matorista",
+        "telefono": "+5493516439317",
+        "tecnico": 1,
+        "direccion": "Tucumán 292 - Local 3 - Córdoba"
+    }
+},
+{
+    "model": "servicio_tecnico.proveedores",
+    "pk": 18,
+    "fields": {
+        "nombre": "Bite Repuestos",
+        "telefono": "+5493512477883",
+        "tecnico": 1,
+        "direccion": "Rioja 118 Cordoba"
+    }
+},
+{
+    "model": "servicio_tecnico.proveedores",
+    "pk": 19,
+    "fields": {
+        "nombre": "EnLinea",
+        "telefono": "+5493515205342",
+        "tecnico": 1,
+        "direccion": "Rioja 180 Cordoba"
+    }
+},
+{
+    "model": "servicio_tecnico.proveedores",
+    "pk": 20,
+    "fields": {
+        "nombre": "Ofertas dif Prov",
+        "telefono": "+5493516664833",
+        "tecnico": 1,
+        "direccion": "cordoba s/n"
+    }
+}
+]

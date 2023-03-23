@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block ver_repuestos %}
+
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <table class="table table-bordered table-sm mt-4" style="text-align: center; fron-size: 14px; color: white">
+                <thead class="table-info">
+                    <tr>
+                        <th>Fecha</th>
+                        <th>Proveedor</th>
+                        <th>Categoria</th>
+                        <th>Marca</th>
+                        <th>Modelo</th>
+                        <th>Tipo</th>
+                        <th>Precio</th>
+                        <th>Dolar</th>
+                        
+                    </tr>
+                </thead>
+                {% for repuesto in repuestos %}    
+                <tr> 
+                    <td>{{ repuesto.fecha }}</td>
+                    <td>{{ repuesto.proveedor }}</td>
+                    <td>{{ repuesto.categoria }}</td>
+                    <td>{{ repuesto.marca }}</td>
+                    <td>{{ repuesto.modelo }}</td>
+                    <td>{{ repuesto.dato_extra }}</td>
+                    <td>{{ repuesto.precio }}</td>
+                    <td>{{ repuesto.dolar_fecha }}</td>
+              
+                
+                {% endfor %}
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
+
+
+
+{% endblock %}

@@ -1,0 +1,41 @@
+{% extends 'base.html' %} {% block title %} Registro {% endblock title%} 
+{% block content %}
+
+<div class="container bootstrap snippets bootdey">
+    <h1 class="text-primary mt-3">Carga de datos personales y empresa.</h1>
+      <hr>
+
+	<div class="row">
+      <!-- left column -->
+      
+      <div class="col-md-3">
+        <div class="text-center">
+            {% if request.user.datosusuario.avatar %}
+                <img src={{request.user.datosusuario.avatar.url}} alt="avatar"  class="avatar img-circle img-thumbnail">
+            {% else %}
+                 <img src="https://bootdey.com/img/Content/avatar/avatar7.png" class="avatar img-circle img-thumbnail" alt="avatar">
+            {% endif%}
+        </div>
+      </div>
+      
+      <!-- edit form column -->
+      <div class="col-md-9 personal-info">
+        <div class="alert alert-info alert-dismissable">
+          <a class="panel-close close" data-dismiss="alert"></a> 
+          <i class="fa fa-coffee"></i>
+          Muy <strong>Importante</strong>. Informacion necesaria para creacion de cuenta y logistica.
+        </div>
+        <h3>Personal info</h3>
+        
+        <form class="form-horizontal" role="form" action={% url 'perfil' %}  method="post" enctype='multipart/form-data'>
+            {% csrf_token %}
+            {{form.as_p}}
+            <div class="d-grid gap-2">
+                <button class="btn btn-danger m-3">EDITAR PERFIL</button> 
+        </div>
+        </form>
+      </div>
+    </div>
+</div>
+
+{% endblock %}

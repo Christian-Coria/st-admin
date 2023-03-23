@@ -1,0 +1,57 @@
+{% load static %}
+{% load mi_tienda %}
+
+{% for producto in productos %}
+    <div>
+        <figure class="card card-product-grid card-lg m-3" style="box-shadow: 0px 0px 10px 0px #333 inset; width: 250px; background-color: #F5F6F6 "> <a href={% url 'ver_imagen' producto.id %} class="img-wrap " data-abc="true"> 
+            <img src="/media/{{producto.imagen}}" class="m-2 img-fluid card-img-top p-2 rounded mx-auto d-block" style="height:250px"> </a>
+                <span class="discount" style=" position: absolute;
+                top: 15px;
+                left: 20px;
+                color: #ffffff;
+                background-color: #fe302f;
+                padding: 2px 8px;
+                text-transform: uppercase;
+                font-size: 0.85rem;">${{ producto.precio }}</span>
+                <div>
+                    <div class="d-flex sale ">
+                        <div class="btn" style="
+                            border-radius: 0;
+                            width: fit-content;
+                            background-color: #4714d279;
+                            box-shadow: 0px 10px 10px #E0E0E0;
+                            z-index: 1;
+                            color: #2d3277;
+                            width: 200px;
+                            font-size: 14px;
+                            font-weight: 900;"
+                        ><a href={% url 'bajo_pedido' %}>Pre-Venta</strong></a></div>
+                        <div class="block quantity p-2">
+                            <input type="number" class="form-control" id="cart_quantity" value="1" min="0" max="5" placeholder="Ingrese cantidad" name="cart_quantity">
+                        </div>
+                    </div>
+                </div>
+                <center>
+                    <div class="p-2">
+                        <div class="col-md-9 col-xs-9 p-3"> 
+                            <a href={% url 'ver_imagen' producto.id %} class="title text-capitalize text-decoration-none fst-italic" style="color:#5d2f26" data-abc="true"><strong>{{ producto.producto }}</strong></a>
+                            <a href={% url 'ver_imagen' producto.id %} class="title text-capitalize text-decoration-none fst-italic" style="color:#5d2f26" data-abc="true"><strong>Stock :{{ producto.stock }}</strong></a>
+                        </div>
+                        {% if request.session.el_pedido %}
+                        <span>{{ producto|en_pedido:request.session.el_pedido }}</span>
+                        {% endif %}
+                    
+                    <form action={% url 'ver_imagenes' %} method="post">
+                        {% csrf_token %}
+                        <!--<input hidden type="text" name="producto" value ="{{producto.id}}"/>
+                        <input type="submit" class="btn btn-primary btn-sm text-decoration-none d-flex" value="Agregar"/>-->
+                        <input type="submit"  hidden class="col-12 vervalor" value="1"/>
+                        <input type="submit"  hidden class="col-12 verid" value="utn_{{producto.id}}"/>
+                        <button type="button" class="btn btn-primary 
+                                                agregar">{{producto.id}}Agregar</button>
+                                                
+                                                
+                   </form>
+            </figure>
+    </div>
+{% endfor %}

@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block title %} 
+Crear Cliente
+{% endblock title%}
+
+{% block content %}
+<section class="container m-4">
+    <div class="d-grid gap-2">
+            <a class="btn btn-primary m-2" href={% url 'listar_clientes'%}>Volver a la lista</a>
+    </div> 
+        <div class="container m-2 ">
+            <div class="col-md-6 fst-italic p-3" style="box-shadow: 0px 0px 10px 0px #333 inset;">
+                <div class="text-center m-3"><p >Carga de Cliente</p> </div>
+                    <form action={% url 'crear_cliente' %}  method="post">
+                            {% csrf_token %}
+                        <table class="form-outline mb-4 ">
+                                {{form.as_table}}
+                        </table>
+                            <div class="d-grid gap-2 ">  
+                                <button class="btn btn-danger ">==> INGRESAR CLIENTE <==</button><a class="btn btn-warning m-3" href={% url 'crear_ingreso'%}>Volver Crear Reparacion</a>
+                            </div>
+                        </form>
+                    </form>
+                </div>
+            </div>
+        </div>
+</section>
+
+{% endblock %}

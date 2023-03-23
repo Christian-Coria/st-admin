@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block ver_productos %}
+
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <table class="table table-bordered table-sm mt-4" style="text-align: center; fron-size: 14px; color: white">
+                <thead class="table-info">
+                    <tr>
+                        <th>Estado</th>
+                        <th>Categoria</th>
+                        <th>Nombre</th>
+                        <th>Condicion</th>
+                        <th>Stock</th>
+                        <th>Precio</th>
+                        
+                    </tr>
+                </thead>
+                {% for producto in productos %}    
+                <tr> 
+                    <td>{{ producto.estado }}</td>
+                    <td>{{ producto.categoria }}</td>
+                    <td>{{ producto.producto }}</td>
+                    <td>{{ producto.condicion }}</td>
+                    <td>{{ producto.stock }}</td>
+                    <td>{{ producto.precio }}</td>
+              
+                
+                {% endfor %}
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
+
+>
+
+{% endblock %}

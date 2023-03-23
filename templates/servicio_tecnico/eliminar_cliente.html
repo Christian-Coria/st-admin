@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block title %} 
+Eliminar Cliente
+{% endblock title%}
+
+{% block content %}
+<div class="container-fluid>">
+    <div class="row col-12">
+        <div class="d-grid gap-2">
+            <a class="btn btn-primary" href={% url 'listar_clientes'%}>Volver a la lista</a>
+            </div> 
+        </br>
+        <div>
+            <form action={% url 'eliminar_cliente' object.id %}  method="post">
+                {% csrf_token %}
+               
+                <h1>Esta seguro de Eliminar el CLIENTE?</h1>
+                    <h5>Recuerde que si elimina el Cliente se eliminaran Todas las Reparaciones asociadas!</h5>
+            </br>
+                    <div class="d-grid gap-2"> 
+                <button class="btn btn-danger" onclick="alert('ELIMINADO!')" >ELIMINAR CLIENTE</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script>
+    alert('Recuerda que si eliminas al cliente, eliminaras sus ordenes asociadas!!!');
+</script>
+{% endblock %}

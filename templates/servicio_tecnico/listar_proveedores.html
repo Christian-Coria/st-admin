@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% block title %} 
+Lista de Proveedores
+{% endblock title%}
+
+{% block content %}
+<h1 class="m-3">Listado de Proveedores</h1>
+        <table table class="table table-bordered table-sm mt-4" style="text-align: center; fron-size: 14px; color: white">
+            <thead>
+                <tr>
+                    <th>Id Proveedor</th>
+                    <th>Nombre</th>
+                    <th>Telefono</th>
+                    <th colspan="2">Opciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for proveedor in object_list %}
+                <tr>
+                    <td>{{proveedor.id}}</td>
+                    <td>{{proveedor.nombre}}</td>
+                    <td>{{proveedor.telefono}}
+                    <td>
+                        <a class="btn btn-success btn-sm"<a href={% url 'editar_proveedor' proveedor.id %}>Editar</a>
+                        <a class="btn btn-danger btn-sm"<a href={% url 'eliminar_proveedor' proveedor.id %}>Eliminar</a> 
+                    </td>
+                </tr>
+                {% endfor %}
+        </tbody>
+    </table>
+    </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,14 @@
+/* line 1, ../../ProyectoEnLinea/static_dev/scss/footer.scss */
+.box {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+}
+
+/* line 7, ../../ProyectoEnLinea/static_dev/scss/footer.scss */
+.icon {
+  display: inline-block;
+  vertical-align: top;
+}
+
+/*# sourceMappingURL=footer.css.map */

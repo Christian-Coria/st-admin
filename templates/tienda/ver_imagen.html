@@ -1,0 +1,110 @@
+{% extends 'base.html' %}
+
+
+{% block title %} 
+Ver Producto
+{% endblock title%}
+
+{% block content %}
+
+
+
+
+<div class="container my-5">
+    <div class="row">
+        <div class="col-md-5">
+            <div class="main-img">
+                <img class="img-fluid" src="/media/{{producto.imagen}}" alt="ProductS"/>
+                <!--<div class="row my-3 previews">
+                    <div class="col-md-3">
+                        <img class="w-100" src="https://cdn.pixabay.com/photo/2015/07/24/18/40/model-858754_960_720.jpg" alt="Sale">
+                    </div>
+                    <div class="col-md-3">
+                        <img class="w-100" src="https://cdn.pixabay.com/photo/2015/07/24/18/38/model-858749_960_720.jpg" alt="Sale">
+                    </div>
+                    <div class="col-md-3">
+                        <img class="w-100" src="https://cdn.pixabay.com/photo/2015/07/24/18/39/model-858751_960_720.jpg" alt="Sale">
+                    </div>
+                    <div class="col-md-3">
+                        <img class="w-100" src="https://cdn.pixabay.com/photo/2015/07/24/18/37/model-858748_960_720.jpg" alt="Sale">
+                    </div>
+                </div>-->
+            </div>
+        </div>
+        <div class="col-md-7">
+            <div class="main-description px-2">
+                <div class="category text-bold">
+                    Categoria: {{ producto.categoria }}
+                </div>
+                <div class="product-title text-bold my-3">
+                    <strong>{{ producto.producto }}</strong>
+                </div>
+
+
+                <div class="price-area my-4">
+                    <!--<p class="old-price mb-1"><del>$100</del>
+                        <span class="old-price-discount text-danger">(20% off)</span></p>-->
+                    <p class="new-price text-bold mb-1"><strong>$ {{ producto.precio }}</strong></p>
+                    <!--<p class="text-secondary mb-1">(Additional tax may apply on checkout)</p>-->
+
+                </div>
+
+
+                <div class="buttons d-flex my-5">
+                    
+                    <!--<form action='/ver' method="post">{% csrf_token %}-->
+                    <form action={% url 'ver_imagen' producto.id %} method="post">
+                        {% csrf_token %}
+                        <input hidden type="text" name="producto" value ="{{producto.id}}"/>
+                        <input type="submit" class="btn btn-primary btn-sm text-decoration-none d-flex m-3" value="Agregar"/>   
+                   </form>
+
+                    <div class="block quantity">
+                        <input type="number" class="form-control" id="cart_quantity" value="1" min="0" max="5" placeholder="Enter email" name="cart_quantity">
+                    </div>
+                    <br>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="product-details my-4">
+                <p class="details-title text-color mb-1">Detalle de Producto: </p>
+                <p class="description"><strong>{{ producto.descripcion }}</strong></p>
+            </div>
+            <!--<div class="product-details my-4">
+                <p class="details-title text-color mb-2">Material & Care</p>
+                <ul>
+                    <li>Cotton</li>
+                    <li>Machine-wash</li>
+                </ul>
+            </div>
+            <div class="product-details my-4">
+                <p class="details-title text-color mb-2">Sold by</p>
+                <ul>
+                    <li>Cotton</li>
+                    <li>Machine-wash</li
+                </ul>>
+            </div>-->
+        </div>
+    </div>
+</div>
+
+
+
+<div class="container similar-products my-4">
+    <hr>
+    <p class="display-5">Productos Similares</p>
+</div>
+
+    <div class="container">
+        <div class="row-cols-4 d-inline-flex p-2">
+            <div class="col-12 justify-content-start d-flex flex-wrap">
+                {% include 'snippets/lista_productos.html' %}
+            </div>
+        </div>
+    </div>
+    
+    
+
+{% endblock  %}

@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "ver_imagen.css",
+	"sources": [
+		"../scss/ver_imagen.scss"
+	],
+	"sourcesContent": [
+		"body{\n    background: linear-gradient(to bottom right,#24404d, #6dbff1,black);\n    color: #f1faee;\n}\n\n\n"
+	],
+	"names": [],
+	"mappings": ";AAAA,AAAA,IAAI,CAAA;EACA,UAAU,EAAE,yDAAuD;EACnE,KAAK,EAAE,OAAO;CACjB"
+}

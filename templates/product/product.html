@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+
+{% block title %} 
+Productos
+{% endblock title%}
+
+{% block content %}
+
+
+
+
+
+
+<main class="container">
+    <section class="row">
+        <div class="col"style="padding: 20px 20px" >
+          <div class="card-group">
+            <div class="card p-3 mb-2 card text-white bg-danger text-center d-flex shadow-lg">
+              <img src="/media/desarrollo/admin3.jfif" class="card-img-top mx-auto" alt="administracion de tu servicio tecnico">
+              <div class="card-body">
+                <h5 class="card-title fs-2">Administra Tu Negocio y/o Servicio Tecnico</h5>
+                <p class="card-text fw-bold text-center text-white">Podrá administrar sus clientes, entregar ordenes de reparacion
+                  , controlar inventario entre otras funciones.</p>
+                <div class="d-grid gap-2">
+                  <a class="btn btn-dark mb-4" href={% url 'buscar' %}>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-in-right aling-text-top" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd" d="M6 3.5a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 0-1 0v2A1.5 1.5 0 0 0 6.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-8A1.5 1.5 0 0 0 5 3.5v2a.5.5 0 0 0 1 0v-2z"/>
+                      <path fill-rule="evenodd" d="M11.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H1.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z"/>
+                    </svg>
+                    Ingresar</a>
+                  </div> 
+              </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+
+{% endblock %}

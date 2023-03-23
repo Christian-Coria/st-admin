@@ -1,0 +1,1098 @@
+[
+{
+    "model": "product.categoria",
+    "pk": 1,
+    "fields": {
+        "clase": "Modulos",
+        "slug": "modulos"
+    }
+},
+{
+    "model": "product.categoria",
+    "pk": 2,
+    "fields": {
+        "clase": "Touch",
+        "slug": "touch"
+    }
+},
+{
+    "model": "product.categoria",
+    "pk": 3,
+    "fields": {
+        "clase": "Pines",
+        "slug": "pines"
+    }
+},
+{
+    "model": "product.categoria",
+    "pk": 4,
+    "fields": {
+        "clase": "Flex Main",
+        "slug": "flex-main"
+    }
+},
+{
+    "model": "product.categoria",
+    "pk": 5,
+    "fields": {
+        "clase": "Lcd",
+        "slug": "lcd"
+    }
+},
+{
+    "model": "product.categoria",
+    "pk": 6,
+    "fields": {
+        "clase": "Placa de Carga",
+        "slug": "placa-carga"
+    }
+},
+{
+    "model": "product.categoria",
+    "pk": 7,
+    "fields": {
+        "clase": "Glass",
+        "slug": "glass"
+    }
+},
+{
+    "model": "product.categoria",
+    "pk": 8,
+    "fields": {
+        "clase": "Swich-botones",
+        "slug": "swich-botones"
+    }
+},
+{
+    "model": "product.categoria",
+    "pk": 9,
+    "fields": {
+        "clase": "Buzzer - Campanillas",
+        "slug": "buzzer-campanilla"
+    }
+},
+{
+    "model": "product.categoria",
+    "pk": 10,
+    "fields": {
+        "clase": "Auriculares - Parlantes",
+        "slug": "auriculares"
+    }
+},
+{
+    "model": "product.categoria",
+    "pk": 11,
+    "fields": {
+        "clase": "Flex - Varios",
+        "slug": "flex-varios"
+    }
+},
+{
+    "model": "product.categoria",
+    "pk": 12,
+    "fields": {
+        "clase": "Tapas",
+        "slug": "tapas"
+    }
+},
+{
+    "model": "product.categoria",
+    "pk": 13,
+    "fields": {
+        "clase": "Carcazas",
+        "slug": "carcazas"
+    }
+},
+{
+    "model": "product.categoria",
+    "pk": 14,
+    "fields": {
+        "clase": "Baterias",
+        "slug": "baterias"
+    }
+},
+{
+    "model": "product.categoria",
+    "pk": 15,
+    "fields": {
+        "clase": "Cargadores",
+        "slug": "cargadores"
+    }
+},
+{
+    "model": "product.categoria",
+    "pk": 16,
+    "fields": {
+        "clase": "Bluetooth",
+        "slug": "bluetooth"
+    }
+},
+{
+    "model": "product.categoria",
+    "pk": 17,
+    "fields": {
+        "clase": "Manos Libres",
+        "slug": "manos-libres"
+    }
+},
+{
+    "model": "product.categoria",
+    "pk": 18,
+    "fields": {
+        "clase": "Templados / Film / Hidrogel",
+        "slug": "templados-film"
+    }
+},
+{
+    "model": "product.categoria",
+    "pk": 19,
+    "fields": {
+        "clase": "Parlante - Torre",
+        "slug": "parlantes-torres"
+    }
+},
+{
+    "model": "product.categoria",
+    "pk": 20,
+    "fields": {
+        "clase": "Flip Covers",
+        "slug": "flip-covers"
+    }
+},
+{
+    "model": "product.categoria",
+    "pk": 21,
+    "fields": {
+        "clase": "Adaptadores",
+        "slug": "adaptadores"
+    }
+},
+{
+    "model": "product.categoria",
+    "pk": 22,
+    "fields": {
+        "clase": "Cargador Universal",
+        "slug": "cargador-universal"
+    }
+},
+{
+    "model": "product.categoria",
+    "pk": 23,
+    "fields": {
+        "clase": "Estacion Desoldado",
+        "slug": "estacion-desoldado"
+    }
+},
+{
+    "model": "product.categoria",
+    "pk": 24,
+    "fields": {
+        "clase": "Plancha Termica",
+        "slug": "plancha-termica"
+    }
+},
+{
+    "model": "product.categoria",
+    "pk": 25,
+    "fields": {
+        "clase": "Microscopios",
+        "slug": "microscopio"
+    }
+},
+{
+    "model": "product.categoria",
+    "pk": 26,
+    "fields": {
+        "clase": "Limpiadora Cubeta Ultrasonica",
+        "slug": "limpiadora-ultrasonica"
+    }
+},
+{
+    "model": "product.categoria",
+    "pk": 27,
+    "fields": {
+        "clase": "Fuentes Regulables",
+        "slug": "fuentes-regulables"
+    }
+},
+{
+    "model": "product.categoria",
+    "pk": 28,
+    "fields": {
+        "clase": "Tester - Multimetro",
+        "slug": "tester"
+    }
+},
+{
+    "model": "product.categoria",
+    "pk": 29,
+    "fields": {
+        "clase": "Tester Usb",
+        "slug": "tester-usb"
+    }
+},
+{
+    "model": "product.categoria",
+    "pk": 30,
+    "fields": {
+        "clase": "Dock Test",
+        "slug": "dock-test"
+    }
+},
+{
+    "model": "product.categoria",
+    "pk": 31,
+    "fields": {
+        "clase": "Alcohol Isopropilico",
+        "slug": "alcohol-isopropilico"
+    }
+},
+{
+    "model": "product.categoria",
+    "pk": 32,
+    "fields": {
+        "clase": "Flux",
+        "slug": "flux"
+    }
+},
+{
+    "model": "product.categoria",
+    "pk": 33,
+    "fields": {
+        "clase": "Removedor",
+        "slug": "removedor"
+    }
+},
+{
+    "model": "product.categoria",
+    "pk": 34,
+    "fields": {
+        "clase": "Estaño",
+        "slug": "estano"
+    }
+},
+{
+    "model": "product.categoria",
+    "pk": 35,
+    "fields": {
+        "clase": "Stencil",
+        "slug": "stencil"
+    }
+},
+{
+    "model": "product.categoria",
+    "pk": 36,
+    "fields": {
+        "clase": "Bruselas - Pinzas",
+        "slug": "bruselas"
+    }
+},
+{
+    "model": "product.categoria",
+    "pk": 37,
+    "fields": {
+        "clase": "Soporte de Placas",
+        "slug": "soporte-placas"
+    }
+},
+{
+    "model": "product.categoria",
+    "pk": 38,
+    "fields": {
+        "clase": "Lamparas",
+        "slug": "lamparas"
+    }
+},
+{
+    "model": "product.categoria",
+    "pk": 39,
+    "fields": {
+        "clase": "Destornilladores",
+        "slug": "destornilladores"
+    }
+},
+{
+    "model": "product.categoria",
+    "pk": 40,
+    "fields": {
+        "clase": "Manta Antiestatica",
+        "slug": "mantas"
+    }
+},
+{
+    "model": "product.categoria",
+    "pk": 41,
+    "fields": {
+        "clase": "Abridor - Espatula",
+        "slug": "abridor"
+    }
+},
+{
+    "model": "product.categoria",
+    "pk": 42,
+    "fields": {
+        "clase": "Placa Testeadora",
+        "slug": "placa-testeadora"
+    }
+},
+{
+    "model": "product.categoria",
+    "pk": 43,
+    "fields": {
+        "clase": "Punta de Soldar",
+        "slug": "punta-soldar"
+    }
+},
+{
+    "model": "product.categoria",
+    "pk": 44,
+    "fields": {
+        "clase": "Cinta Kapton",
+        "slug": "cinta-kapton"
+    }
+},
+{
+    "model": "product.categoria",
+    "pk": 45,
+    "fields": {
+        "clase": "Cinta de Aluminio",
+        "slug": "cinta-aluminio"
+    }
+},
+{
+    "model": "product.categoria",
+    "pk": 46,
+    "fields": {
+        "clase": "Localizador de Fallas",
+        "slug": "loca-fallas"
+    }
+},
+{
+    "model": "product.categoria",
+    "pk": 47,
+    "fields": {
+        "clase": "Bisturi",
+        "slug": "bisturi"
+    }
+},
+{
+    "model": "product.categoria",
+    "pk": 48,
+    "fields": {
+        "clase": "Organizadores",
+        "slug": "organizadores"
+    }
+},
+{
+    "model": "product.categoria",
+    "pk": 49,
+    "fields": {
+        "clase": "Cable Fpc",
+        "slug": "cable-fpc"
+    }
+},
+{
+    "model": "product.categoria",
+    "pk": 50,
+    "fields": {
+        "clase": "Minitorno",
+        "slug": "minitorno"
+    }
+},
+{
+    "model": "product.categoria",
+    "pk": 51,
+    "fields": {
+        "clase": "Pulsera Antiestatica",
+        "slug": "pulsera-antiestatica"
+    }
+},
+{
+    "model": "product.categoria",
+    "pk": 52,
+    "fields": {
+        "clase": "Cables Usb",
+        "slug": "cable-usb"
+    }
+},
+{
+    "model": "product.categoria",
+    "pk": 53,
+    "fields": {
+        "clase": "Cepillo Antiestatico",
+        "slug": "cepillo-antiestatico"
+    }
+},
+{
+    "model": "product.categoria",
+    "pk": 54,
+    "fields": {
+        "clase": "Mango Repuesto Soldador",
+        "slug": "repuesto-soldador"
+    }
+},
+{
+    "model": "product.categoria",
+    "pk": 55,
+    "fields": {
+        "clase": "Pegamentos",
+        "slug": "pegamentos"
+    }
+},
+{
+    "model": "product.categoria",
+    "pk": 56,
+    "fields": {
+        "clase": "Alambre de Corte",
+        "slug": "alambre-corte"
+    }
+},
+{
+    "model": "product.categoria",
+    "pk": 57,
+    "fields": {
+        "clase": "Cinta Desoldante",
+        "slug": "cinta-desoldante"
+    }
+},
+{
+    "model": "product.categoria",
+    "pk": 58,
+    "fields": {
+        "clase": "Mascara UV",
+        "slug": "mascara-uv"
+    }
+},
+{
+    "model": "product.categoria",
+    "pk": 59,
+    "fields": {
+        "clase": "Estractor de Humo",
+        "slug": "estractor-humo"
+    }
+},
+{
+    "model": "product.categoria",
+    "pk": 60,
+    "fields": {
+        "clase": "Estacion de Eliminacion de Polvo",
+        "slug": "eliminacion-polvo"
+    }
+},
+{
+    "model": "product.categoria",
+    "pk": 61,
+    "fields": {
+        "clase": "Base Precalentadora",
+        "slug": "base-precalentadora"
+    }
+},
+{
+    "model": "product.categoria",
+    "pk": 62,
+    "fields": {
+        "clase": "Icharge",
+        "slug": "icharge"
+    }
+},
+{
+    "model": "product.categoria",
+    "pk": 63,
+    "fields": {
+        "clase": "Adaptadores",
+        "slug": "adaptadores"
+    }
+},
+{
+    "model": "product.categoria",
+    "pk": 64,
+    "fields": {
+        "clase": "Troquelador de Sim",
+        "slug": "troquelador-sim"
+    }
+},
+{
+    "model": "product.categoria",
+    "pk": 65,
+    "fields": {
+        "clase": "Alicate",
+        "slug": "alicate"
+    }
+},
+{
+    "model": "product.categoria",
+    "pk": 66,
+    "fields": {
+        "clase": "Base de Microscopio",
+        "slug": "base-microscopio"
+    }
+},
+{
+    "model": "product.categoria",
+    "pk": 67,
+    "fields": {
+        "clase": "Bolas de Estaño",
+        "slug": "bola-estano"
+    }
+},
+{
+    "model": "product.categoria",
+    "pk": 68,
+    "fields": {
+        "clase": "Bomba de Vacio",
+        "slug": "bomba-vacio"
+    }
+},
+{
+    "model": "product.categoria",
+    "pk": 69,
+    "fields": {
+        "clase": "Boquillas de Estacion",
+        "slug": "boquillas"
+    }
+},
+{
+    "model": "product.categoria",
+    "pk": 70,
+    "fields": {
+        "clase": "Botellas",
+        "slug": "botellas"
+    }
+},
+{
+    "model": "product.categoria",
+    "pk": 71,
+    "fields": {
+        "clase": "Cable de Multimetro",
+        "slug": "cable-multimetro"
+    }
+},
+{
+    "model": "product.categoria",
+    "pk": 72,
+    "fields": {
+        "clase": "Cable Power",
+        "slug": "cable-power"
+    }
+},
+{
+    "model": "product.categoria",
+    "pk": 73,
+    "fields": {
+        "clase": "Caja Uv de Secado",
+        "slug": "caja-uv"
+    }
+},
+{
+    "model": "product.categoria",
+    "pk": 74,
+    "fields": {
+        "clase": "Calibrador de Presicion",
+        "slug": "calibrador"
+    }
+},
+{
+    "model": "product.categoria",
+    "pk": 75,
+    "fields": {
+        "clase": "Camara Infrarroja",
+        "slug": "camara-infrarroja"
+    }
+},
+{
+    "model": "product.categoria",
+    "pk": 76,
+    "fields": {
+        "clase": "Cinta Doble Faz",
+        "slug": "cinta-doble-faz"
+    }
+},
+{
+    "model": "product.categoria",
+    "pk": 77,
+    "fields": {
+        "clase": "Clips",
+        "slug": "clips"
+    }
+},
+{
+    "model": "product.categoria",
+    "pk": 78,
+    "fields": {
+        "clase": "Chupa Estaño",
+        "slug": "desoldador"
+    }
+},
+{
+    "model": "product.categoria",
+    "pk": 79,
+    "fields": {
+        "clase": "Maquina Despegadora",
+        "slug": "despegadora"
+    }
+},
+{
+    "model": "product.categoria",
+    "pk": 80,
+    "fields": {
+        "clase": "Despegador",
+        "slug": "despegador"
+    }
+},
+{
+    "model": "product.categoria",
+    "pk": 81,
+    "fields": {
+        "clase": "Esponjas",
+        "slug": "esponjas"
+    }
+},
+{
+    "model": "product.categoria",
+    "pk": 82,
+    "fields": {
+        "clase": "Gel UV",
+        "slug": "gel-uv"
+    }
+},
+{
+    "model": "product.categoria",
+    "pk": 83,
+    "fields": {
+        "clase": "Goma de Silicona p/Plancha",
+        "slug": "silicona"
+    }
+},
+{
+    "model": "product.categoria",
+    "pk": 84,
+    "fields": {
+        "clase": "Ibridge",
+        "slug": "ibridge"
+    }
+},
+{
+    "model": "product.categoria",
+    "pk": 85,
+    "fields": {
+        "clase": "Icopy",
+        "slug": "icopy"
+    }
+},
+{
+    "model": "product.categoria",
+    "pk": 86,
+    "fields": {
+        "clase": "ID Face",
+        "slug": "idface"
+    }
+},
+{
+    "model": "product.categoria",
+    "pk": 87,
+    "fields": {
+        "clase": "Kit de Arranque",
+        "slug": "arranque"
+    }
+},
+{
+    "model": "product.categoria",
+    "pk": 88,
+    "fields": {
+        "clase": "Laminadoras",
+        "slug": "laminadoras"
+    }
+},
+{
+    "model": "product.categoria",
+    "pk": 89,
+    "fields": {
+        "clase": "Lapiz de Succion",
+        "slug": "lapiz-succion"
+    }
+},
+{
+    "model": "product.categoria",
+    "pk": 90,
+    "fields": {
+        "clase": "Lentes",
+        "slug": "lentes"
+    }
+},
+{
+    "model": "product.categoria",
+    "pk": 91,
+    "fields": {
+        "clase": "Limpiador",
+        "slug": "limpiador"
+    }
+},
+{
+    "model": "product.categoria",
+    "pk": 92,
+    "fields": {
+        "clase": "Lupa",
+        "slug": "lupa"
+    }
+},
+{
+    "model": "product.categoria",
+    "pk": 93,
+    "fields": {
+        "clase": "Mango Repuesto de Calor p/ Estacion",
+        "slug": "mango-calor"
+    }
+},
+{
+    "model": "product.categoria",
+    "pk": 94,
+    "fields": {
+        "clase": "Mascara UV",
+        "slug": "mascara-uv"
+    }
+},
+{
+    "model": "product.categoria",
+    "pk": 95,
+    "fields": {
+        "clase": "Moldes p/ Laminadora",
+        "slug": "moldes-laminadora"
+    }
+},
+{
+    "model": "product.categoria",
+    "pk": 96,
+    "fields": {
+        "clase": "Pinza Sopapa",
+        "slug": "pinza-sopapa"
+    }
+},
+{
+    "model": "product.categoria",
+    "pk": 97,
+    "fields": {
+        "clase": "Cable Acerado - Jumps",
+        "slug": "jumps"
+    }
+},
+{
+    "model": "product.categoria",
+    "pk": 98,
+    "fields": {
+        "clase": "Placa Madre",
+        "slug": "placa-madre"
+    }
+},
+{
+    "model": "product.categoria",
+    "pk": 99,
+    "fields": {
+        "clase": "Placa Testeadora",
+        "slug": "placa-testeadora"
+    }
+},
+{
+    "model": "product.categoria",
+    "pk": 100,
+    "fields": {
+        "clase": "Plataforma de Reparacion",
+        "slug": "plataforma-reparacion"
+    }
+},
+{
+    "model": "product.categoria",
+    "pk": 101,
+    "fields": {
+        "clase": "Plataforma Reballing",
+        "slug": "plataforma-reballing"
+    }
+},
+{
+    "model": "product.categoria",
+    "pk": 102,
+    "fields": {
+        "clase": "Plataforma de Soldado",
+        "slug": "plataforma-soldado"
+    }
+},
+{
+    "model": "product.categoria",
+    "pk": 103,
+    "fields": {
+        "clase": "Porta Sim",
+        "slug": "porta-sim"
+    }
+},
+{
+    "model": "product.categoria",
+    "pk": 104,
+    "fields": {
+        "clase": "Power Boot",
+        "slug": "power-boot"
+    }
+},
+{
+    "model": "product.categoria",
+    "pk": 105,
+    "fields": {
+        "clase": "Power Cable for Macbook",
+        "slug": "cable-macbook"
+    }
+},
+{
+    "model": "product.categoria",
+    "pk": 106,
+    "fields": {
+        "clase": "Programador Clone",
+        "slug": "programador-clone"
+    }
+},
+{
+    "model": "product.categoria",
+    "pk": 107,
+    "fields": {
+        "clase": "Pre Calentadora",
+        "slug": "pre-calentadora"
+    }
+},
+{
+    "model": "product.categoria",
+    "pk": 108,
+    "fields": {
+        "clase": "Puas",
+        "slug": "puas"
+    }
+},
+{
+    "model": "product.categoria",
+    "pk": 109,
+    "fields": {
+        "clase": "Reparador de Huella",
+        "slug": "reparador-huella"
+    }
+},
+{
+    "model": "product.categoria",
+    "pk": 110,
+    "fields": {
+        "clase": "Resina",
+        "slug": "resina"
+    }
+},
+{
+    "model": "product.categoria",
+    "pk": 111,
+    "fields": {
+        "clase": "Resistencia p/ Pistola de Calor",
+        "slug": "resistencia-pistola-calor"
+    }
+},
+{
+    "model": "product.categoria",
+    "pk": 112,
+    "fields": {
+        "clase": "Soldador",
+        "slug": "soldador"
+    }
+},
+{
+    "model": "product.categoria",
+    "pk": 113,
+    "fields": {
+        "clase": "Tijeras",
+        "slug": "tijeras"
+    }
+},
+{
+    "model": "product.categoria",
+    "pk": 114,
+    "fields": {
+        "clase": "Usb Kaisi",
+        "slug": "usb-Kaisi"
+    }
+},
+{
+    "model": "product.categoria",
+    "pk": 115,
+    "fields": {
+        "clase": "Belleza",
+        "slug": "belleza"
+    }
+},
+{
+    "model": "product.categoria",
+    "pk": 116,
+    "fields": {
+        "clase": "Cables",
+        "slug": "cables"
+    }
+},
+{
+    "model": "product.categoria",
+    "pk": 117,
+    "fields": {
+        "clase": "Decoracion Led",
+        "slug": "decoracion-led"
+    }
+},
+{
+    "model": "product.categoria",
+    "pk": 118,
+    "fields": {
+        "clase": "Hogar",
+        "slug": "hogar"
+    }
+},
+{
+    "model": "product.categoria",
+    "pk": 119,
+    "fields": {
+        "clase": "Fundas - Tpu",
+        "slug": "fundas-tpu"
+    }
+},
+{
+    "model": "product.categoria",
+    "pk": 120,
+    "fields": {
+        "clase": "Deportivo",
+        "slug": "deportivo"
+    }
+},
+{
+    "model": "product.categoria",
+    "pk": 121,
+    "fields": {
+        "clase": "Green Led",
+        "slug": "green-led"
+    }
+},
+{
+    "model": "product.categoria",
+    "pk": 122,
+    "fields": {
+        "clase": "Electro",
+        "slug": "electro"
+    }
+},
+{
+    "model": "product.categoria",
+    "pk": 123,
+    "fields": {
+        "clase": "Informatica",
+        "slug": "informatica"
+    }
+},
+{
+    "model": "product.categoria",
+    "pk": 124,
+    "fields": {
+        "clase": "Juguetes",
+        "slug": "juguetes"
+    }
+},
+{
+    "model": "product.categoria",
+    "pk": 125,
+    "fields": {
+        "clase": "Led",
+        "slug": "led"
+    }
+},
+{
+    "model": "product.categoria",
+    "pk": 126,
+    "fields": {
+        "clase": "Linternas",
+        "slug": "linternas"
+    }
+},
+{
+    "model": "product.categoria",
+    "pk": 127,
+    "fields": {
+        "clase": "Microfonos",
+        "slug": "microfonos"
+    }
+},
+{
+    "model": "product.categoria",
+    "pk": 128,
+    "fields": {
+        "clase": "Microfonos",
+        "slug": "microfonos"
+    }
+},
+{
+    "model": "product.categoria",
+    "pk": 129,
+    "fields": {
+        "clase": "Microfonos",
+        "slug": "microfonos"
+    }
+},
+{
+    "model": "product.categoria",
+    "pk": 130,
+    "fields": {
+        "clase": "Microfonos",
+        "slug": "microfonos"
+    }
+},
+{
+    "model": "product.categoria",
+    "pk": 131,
+    "fields": {
+        "clase": "Microfonos",
+        "slug": "microfonos"
+    }
+},
+{
+    "model": "product.categoria",
+    "pk": 132,
+    "fields": {
+        "clase": "Pilas",
+        "slug": "pilas"
+    }
+},
+{
+    "model": "product.categoria",
+    "pk": 133,
+    "fields": {
+        "clase": "Seguridad",
+        "slug": "seguridad"
+    }
+},
+{
+    "model": "product.categoria",
+    "pk": 134,
+    "fields": {
+        "clase": "Telefonos",
+        "slug": "telefonos"
+    }
+},
+{
+    "model": "product.categoria",
+    "pk": 135,
+    "fields": {
+        "clase": "Termos",
+        "slug": "termos"
+    }
+},
+{
+    "model": "product.categoria",
+    "pk": 136,
+    "fields": {
+        "clase": "Tv e Imagen",
+        "slug": "tv-imagen"
+    }
+},
+{
+    "model": "product.categoria",
+    "pk": 137,
+    "fields": {
+        "clase": "Accesorios de Autos",
+        "slug": "acc-auto"
+    }
+}
+]

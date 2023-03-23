@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "chat.css",
+	"sources": [
+		"../scss/chat.scss"
+	],
+	"sourcesContent": [
+		"\n\n.chat{\n    color: #ffe600;\n    position: fixed;\n    bottom: 05% !important;\n    right:03% !important;\n}\n\n"
+	],
+	"names": [],
+	"mappings": ";AAEA,AAAA,KAAK,CAAA;EACD,KAAK,EAAE,OAAO;EACd,QAAQ,EAAE,KAAK;EACf,MAAM,EAAE,cAAc;EACtB,KAAK,EAAC,cAAc;CACvB"
+}

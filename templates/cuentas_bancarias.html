@@ -1,0 +1,128 @@
+{% extends 'base.html' %} 
+{% block title %}
+ Cuentas Bancarias 
+{% endblock title%} 
+
+
+{% block content %}
+<div>
+    <h1 id="registro" class="display-3 text-center m-3" style="color:#F82508">Registra tu Deposito</h1>
+</div>
+<div id="formbank" class="container p-5">
+    <div class="row justify-content-center d-flex">
+        <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4">
+            <p class="text-center fs-3" style="color:#FC4404">Sube la foto clara de la boleta de transferencia para confirmar tu pago y Tu número de pedido</p>
+        <form action={% url 'cuentas_bancarias' %}  method="post">
+            {% csrf_token %}
+            <table class="form-outline mb-4 ">
+                {{form.as_table}}
+            </table>
+                <div class="d-grid gap-2 btn-lg">
+                    <button class="btn btn-danger btn-sm m-3">Enviar Pago <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="currentColor" class="bi bi-bank2 svgsap" viewBox="0 0 16 16">
+                            <path d="M8.277.084a.5.5 0 0 0-.554 0l-7.5 5A.5.5 0 0 0 .5 6h1.875v7H1.5a.5.5 0 0 0 0 1h13a.5.5 0 1 0 0-1h-.875V6H15.5a.5.5 0 0 0 .277-.916l-7.5-5zM12.375 6v7h-1.25V6h1.25zm-2.5 0v7h-1.25V6h1.25zm-2.5 0v7h-1.25V6h1.25zm-2.5 0v7h-1.25V6h1.25zM8 4a1 1 0 1 1 0-2 1 1 0 0 1 0 2zM.5 15a.5.5 0 0 0 0 1h15a.5.5 0 1 0 0-1H.5z"/>
+                    </svg></button> 
+                    
+                </div>
+        </form>
+            
+        </div>
+    </div>
+</div>
+<div class="container p-3 elasticap">
+    <div class="row text-center">
+        
+        <div class="col-12 d-flex ">
+        <div class="card bg-primary mb-3 m-1 text-warning" style="max-width: 18rem;">
+            <div class="card-header">Hipotecario</div>
+            <div class="card-body">
+              <h5 class="card-title">Datos de la Cuenta</h5>
+              <p class="card-text">Titular: Bulacio Silvana Gabriela<br>Aleas: 'xxxxxxxxxxxxxxxxxxx'<br>Cbu: xxxxxxxxxxxxxxxxxxxxx</p>
+            </div>
+          </div>
+
+          <div class="card bg-primary mb-3 m-1 text-warning" style="max-width: 18rem;">
+            <div class="card-header">Brubank</div>
+            <div class="card-body">
+              <h5 class="card-title">Datos de la Cuenta</h5>
+              <p class="card-text">Titular: Christian Rodrigo Coria<br>Aleas: 'desbloqueoenlinea'<br>Cbu: 1430001713002552590013</p>
+            </div>
+          </div>
+
+          <div class="card bg-primary mb-3 m-1 text-warning" style="max-width: 18rem;">
+            <div class="card-header">Mercado Pago</div>
+            <div class="card-body">
+              <h5 class="card-title">Datos de la Cuenta</h5>
+              <p class="card-text">Titular: Christian Rodrigo Coria<br>Aleas: 'xxxxxxxxxxxxxxxxxxx'<br>Cbu: 0000003100026771092637</p>
+            </div>
+          </div>
+
+          <div class="card bg-primary mb-3 m-1 text-warning" style="max-width: 18rem;">
+            <div class="card-header">Brubank</div>
+            <div class="card-body">
+              <h5 class="card-title">Datos de la Cuenta</h5>
+              <p class="card-text">Titular: Luis Ismael Coria<br>Aleas: 'xxxxxxxxxxxxxxxxxxx'<br>Cbu: xxxxxxxxxxxxxxxxxxxxxxxxxxxx</p>
+            </div>
+          </div>
+        </div>
+    </div>
+</div>
+
+<script>
+  const tlLoader = gsap.timeline()
+
+      // Loader
+      tlLoader
+            .set('#registro', { yPercent: 100 })
+            .set('#formbank', {opacity: 0})
+            .set('.elasticap', {opacity: 0})
+            .to('#registro',{
+                yPercent: 0,
+                duration: 2,
+                stagger: 0.25,
+            })
+            .to('#formbank',{
+                opacity: 1,
+                duration: 1,
+                scale: 1.2,
+            })
+            .to('#registro',{
+              opacity: 0,
+              duration: 0.5,
+              scale: 0.8,
+            })
+            .to('#registro',{
+              yPercent: -100,
+              duration: 1,
+            })
+            .to('#registro',{
+              yPercent: 0,
+              opacity: 1,
+              duration: 0.5,
+              scale: 1,
+          })
+          .to('.svgsap',{
+            scrollTriger:{
+                trigger: '.svgsap',
+                start: '-100 0',
+                scrub: true,
+                
+            },
+            scale: 0.5,
+            duration: 1,
+        })
+        .to('.elasticap',{
+          scrollTriger:{
+              trigger: '.elasticsap',
+              start: '-200 0',
+          },
+          y: 50,
+          autoAlpha: 1,
+          duration: 1,
+        })
+
+     
+        
+      
+     
+</script>
+{% endblock %}

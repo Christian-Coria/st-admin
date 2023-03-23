@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+
+{% block title %} 
+Lista de ingresos
+{% endblock title%}
+
+{% block content %}
+</center>
+<div class="container">
+    <h1>Listado de Reoaraciones</h1>
+        <table table class="table table-bordered table-sm mt-4" style="text-align: center; fron-size: 14px; color: white">
+            <thead>
+        <tr>
+            <th>Orden</th>
+            <th>Fecha</th>
+            <th>cliente</th>
+            <th>WhatsApp</th>
+            <th>Marca</th>
+            <th>Modelo</th>
+            <th>Imei</th>
+            <th>Falla</th>
+            <th>Precio</th>
+            <th>Estado</th>
+          
+            <th colspan="2">Opciones</th>
+            
+            
+        </tr>
+    </thead>
+    {% for reparacion in reparacion %}
+    <tr> 
+        <td>{{ reparacion.id }}</td>
+        <td>{{ reparacion.fecha }}</td>
+        <td>{{ reparacion.cliente }}</td>
+        <td>{{ reparacion.whatsApp }}</td>
+        <td>{{ reparacion.marca }}</td>
+        <td>{{ reparacion.modelo }}</td>
+        <td>{{ reparacion.imei }}</td>
+        <td>{{ reparacion.falla }}</td>
+        <td>{{ reparacion.precio }}</td>
+        <td>{{ reparacion.estado }}</td>
+       
+            <a class="btn btn-success btn-sm"<a href={% url 'editar_ingreso' object.id %}>Editar ingreso</a>
+            <a class="btn btn-danger btn-sm"<a href={% url 'eliminar_ingreso' object.id %}>Eliminar ingreso</a> 
+        </td>
+        
+
+        
+    {% endfor %}
+    </tr>
+</table>
+
+
+
+{% endblock %}

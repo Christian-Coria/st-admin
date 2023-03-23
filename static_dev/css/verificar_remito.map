@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "verificar_remito.css",
+	"sources": [
+		"../scss/verificar_remito.scss"
+	],
+	"sourcesContent": [
+		"\n.row1{background-color: #6bc6f3f7;}\n.row2{background-color: #ccf1a2f7;}\n.titulo{color:#3511eaf7}\n"
+	],
+	"names": [],
+	"mappings": ";AACA,AAAA,KAAK,CAAA;EAAC,gBAAgB,EAAE,SAAS;CAAG;;;AACpC,AAAA,KAAK,CAAA;EAAC,gBAAgB,EAAE,SAAS;CAAG;;;AACpC,AAAA,OAAO,CAAA;EAAC,KAAK,EAAC,SAAS;CAAE"
+}

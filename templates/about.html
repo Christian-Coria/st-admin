@@ -1,0 +1,75 @@
+{% extends 'base.html' %}
+
+{% block title %} 
+Sobre Nosotros
+{% endblock %}
+
+{% block content %}
+
+
+
+<section class="py-5 text-center container">
+  <div class="row py-lg-5">
+    <div class="col-lg-6 col-md-8 mx-auto">
+      <h1 class="fs-2 fw-light titulo"><svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="currentColor" class="svgsap bi bi-people-fill" viewBox="0 0 16 16">
+        <path d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H7Zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm-5.784 6A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1h4.216ZM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z"/>
+      </svg> Quienes Somos <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="currentColor" class="svgsap bi bi-people-fill" viewBox="0 0 16 16">
+        <path d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H7Zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm-5.784 6A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1h4.216ZM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z"/>
+      </svg></h1>
+ 
+    </div>
+  </div>
+</section>
+<main class="flex-shrink-0">
+  <div class="container">
+      
+      <p class="lead" align="justify">
+          Somos un equipo de personas altamente capacitados para resolver los inconvenientes que se presenten con sus telefonos moviles, tablets, notebooks y computadoras. 
+       </p>
+       <p class="lead" align="justify">
+          Ponemos mucho esmero en que todos los trabajos salgan en tiempo y forma, con la calidad de servicio que amerita tener en nuestras manos la responsabilidad de reparar uno de los artefactos más importantes para cualquiera de nosotros hoy. Además, utilizamos una selección de los repuestos de mayor calidad disponibles en el mercado, lo que les asegura tener sus equipos iguales a como si fueran nuevos.
+
+      </p>
+     
+      <p class="lead" align="justify">
+          Desde hace 23 años redoblamos el esfuerzo para proveer de servicios de reparacion, herramientas, repuestos, y aplicaciones web para el Gremio, y asi tener opciones para que sumes a tu taller.
+  </div>
+</main>
+
+<script>
+  const tlLoader = gsap.timeline()
+  tlLoader
+          .set('.titulo', { yPercent: 100 })
+          .set('.lead', {opacity: 0})
+  
+          .set('.titulo', { 
+              yPercent: -100,
+           })
+          .to('.titulo',{
+              yPercent: 0,
+              duration: 1,
+              stagger: 0.25,
+             
+          })
+          .to('.lead',{
+              opacity: 1,
+              duration: 1,
+              scale: 1.2,
+          })
+          .to('.svgsap',{
+            scrollTriger:{
+                trigger: '.svgsap',
+                start: '-100 0',
+                scrub: true,
+                
+            },
+            scale: 0.5,
+            duration: 1,
+        })
+        .to('.titulo',{
+          scale: 1.5,
+      })
+         
+      </script>
+
+{% endblock %}

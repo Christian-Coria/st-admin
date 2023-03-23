@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block title %} 
+Muestra Proveedor
+{% endblock title%}
+
+{% block content %}
+<div class="container">
+    <div class="row col-12 m-1 ">
+        <div class="text-uppercase fs-1 m-t-3 text-center">
+            <h1>DETALLE DE PROVEEDOR</h1>
+        </div>
+            <ul class="list-group list-group-horizontal-sm d-flex justify-content-end">
+                <h2>Id Proveedor |</h2>
+                <li class="list-group-item">{{object.id}}</li>
+               
+            </ul>
+            <ul class="list-group ">
+                
+                <h2>Proveedor</h2>
+                <li class="list-group-item list-group-item-dark"> {{object.nombre}} </li>
+                <h2>Telefono</h2>
+                <li class="list-group-item list-group-item-danger"> {{object.telefono}} </li>
+
+        <div class="d-grid gap-2">
+            <a class="btn btn-primary m-3" href={% url 'listar_proveedores'%}>Volver a la lista</a>
+        </div>  
+    </div>    
+</div>
+{% endblock%}

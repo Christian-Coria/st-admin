@@ -1,0 +1,53 @@
+{% extends 'base.html' %} {% block title %} Registro {% endblock title%} 
+{% block content %}
+
+
+<section class="vh-100">
+  <div class="container h-100">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col-lg-12 col-xl-11">
+        <div class="card text-black " style="background-color: #3a88e2; border-radius: 25px;">
+          <div class="card-body p-md-5">
+            <div class="row justify-content-center">
+              <div class="col-md-10 col-lg-6 col-xl-5 order-2 order-lg-1">
+
+                <p class="text-center h1 fw-bold mb-5 mx-1 mx-md-4 mt-4">Registro de Usuario</p>
+
+                <form class="mx-1 mx-md-4" method="POST" action="">
+                  {% csrf_token %}
+                  <p><label for="id_username"></label> 
+                    <input type="text" name="username" maxlength="150" autofocus="" required="" id="id_username" placeholder="Nombre"> 
+                    
+                        <p><label for="id_email"></label> 
+                          <input type="email" name="email" maxlength="254" id="id_email" placeholder="email"></p>
+                        <p><label for="id_password1"></label> 
+                          <input type="password" name="password1" autocomplete="new-password" required="" id="id_password1" placeholder="contraseña"> 
+                        <p><label for="id_password2"></label> 
+                          <input type="password" name="password2" autocomplete="new-password" required="" id="id_password2" placeholder="repetir contraseña"> 
+                          
+              
+                    <div class="d-flex justify-content-center mx-4 mb-3 mb-lg-4">
+                      <button type="submit" class="btn btn-primary btn-lg">Registrarse</button>
+                    </div>
+              
+                </form>
+
+              </div>
+              <div class="col-md-10 col-lg-6 col-xl-7 d-flex align-items-center order-1 order-lg-2">
+
+                <video class="w-100" autoplay loop muted>
+                  <source src="/media/desarrollo/mp4/registro.mp4" type="video/mp4" />
+                </video>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+{% endblock %}
+

@@ -1,0 +1,108 @@
+$principal:#4714d279;
+$primary: $principal;
+$secundario: #0f0f10a1;
+$dark: $secundario;
+$terciario: rgba(230, 219, 10, 0.769);
+$warning: $terciario;
+$principal2: #17b30679;
+$success: $principal2;
+$principal3: #0aa1ed79;
+$info: $principal3;
+$principal4: hsla(275, 88%, 50%, 0.209);
+$danger: $principal4;
+
+
+
+$border-radius:               1rem !default;
+$enable-gradients:true;
+$btn-padding-y: .8rem;
+$btn-padding-x: 1.5rem;
+$btn-border-radius: 1rem;
+
+.d-flex img{
+    width: 330px;
+    /*height: 350px;*/
+}
+
+
+@import "bootstrap/bootstrap";
+@import "_variables";
+@import "_header" ;
+@import "_bajo_pedido" ;
+@import "_buscar" ;
+@import "_cargar_producto" ;
+@import "_contacto" ;
+@import "_crear_cliente" ;
+@import "_crear_ingreso" ;
+@import "_crear_proveedor" ;
+@import "_cuentas_bancarias" ;
+@import "_curso_tecnico" ;
+@import "_curso" ;
+@import "_editar_remito" ;
+@import "_editar_ingreso" ;
+@import "_eliminar_proveedor" ;
+@import "_eliminar_ingreso" ;
+@import "_eliminar_cliente" ;
+@import "_listar_clientes" ;
+@import "_listar_ingresos" ;
+@import "_listar_proveedores" ;
+@import "_mensaje_enviado" ;
+@import "_mostrar_cliente" ;
+@import "_mostrar_ingreso" ;
+@import "_mostrar_proveedor" ;
+@import "_preguntas_frecuentes" ;
+@import "_reglamento" ;
+@import "_ver_imagen" ;
+@import "_ver_imagenes" ;
+@import "_verificar_remito" ;
+@import "_carrito";
+@import "_chat";
+@import "_footer";
+@import "_registro";
+@import "_pyme";
+@import "_perfil";
+@import "_logout";
+@import "_login";
+@import "_empresa";
+@import "_editar_perfil";
+
+.btn-primary {
+    border-bottom: 3px solid rgba(0,0,0,0.27);
+}
+
+
+body {
+    background: linear-gradient(to bottom right, #24404d, #6dbff1, black);
+    color: #f1faee;
+    /*background: linear-gradient(-45deg,#ff3d02, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    height: 100vh;
+  }
+  @keyframes gradint {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }*/
+  }
+
+  #login .container #login-row #login-column #login-box {
+    margin-top: 120px;
+    max-width: 600px;
+    height: 320px;
+    border: 1px solid #9C9C9C;
+    background-color: #EAEAEA;
+  }
+  #login .container #login-row #login-column #login-box #login-form {
+    padding: 20px;
+  }
+  #login .container #login-row #login-column #login-box #login-form #register-link {
+    margin-top: -85px;
+  }
+
+  

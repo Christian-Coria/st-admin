@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+
+{% block title %} 
+Lista de Clientes
+{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h1>Listado de Clientes</h1>
+        <table table class="table table-bordered table-sm mt-4" style="text-align: center; fron-size: 14px; color: white">
+            <thead>
+                <tr>
+                    <th>Id Cliente</th>
+                    <th>Nombre</th>
+                    <th>Telefono</th>
+                    <th>Documento</th>
+                    <th colspan="3">Opciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for cliente in object_list %}
+                <tr>
+                    <td>{{cliente.id}}</td>
+                    <td>{{cliente.nombre_completo}}</td>
+                    <td>{{cliente.telefono}}
+                    <td>{{cliente.documento}}
+                    <td>
+                        <a class="btn btn-success btn-sm"<a href={% url 'editar_cliente' cliente.id %}>Editar cliente</a>
+                        <a class="btn btn-danger btn-sm"<a href={% url 'eliminar_cliente' cliente.id %}>Eliminar cliente</a>
+                        <a class="btn btn-primary btn-sm"<a href={% url 'crear_ingreso' %}>Reparaciones</a> 
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</div>
+
+
+
+{% endblock %}

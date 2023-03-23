@@ -1,0 +1,202 @@
+{% extends 'base.html' %}
+
+{% block title %} 
+Administracion Servicio Tecnico
+{% endblock title%}
+
+{% block content %}
+
+
+</hr>
+<div>
+  <h1 class="display-3 text-center m-3 titulo" style="color:#F82508">Administracion</h1>
+</div>
+</hr>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-6">
+      <div class="card shadow p-3 mb-5 bg-info rounded text-center text-dark text-uppercase">
+        <div class="card-body">
+          <h5 class="card-title fs-4">Seccion Clientes</h5>
+          <p class="card-text">ingresar el cliente si este aun no esta registrado</p>
+          <a href={% url 'crear_cliente' %} class="btn btn-primary d-grid gap-2">Ingresar Cliente</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6">
+      <div class="card shadow p-3 mb-5 bg-info rounded text-center text-dark text-uppercase">
+        <div class="card-body">
+          <h5 class="card-title fs-4">Seccion Reparaciones</h5>
+          <p class="card-text">Administra nuevas reparaciones</p>
+          <a href={% url 'crear_ingreso' %} class="btn btn-primary d-grid gap-2">Ingresar Reparacion</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</br>
+<div class="container-fluid ">
+  <div class="row">
+    <div class="col-sm-6">
+      <div class="card shadow p-3 mb-5 bg-info rounded text-center text-dark text-uppercase">
+        <div class="card-body">
+          <h5 class="card-title fs-4 ">Seccion Proveedores</h5>
+          <p class="card-text">Ingresa datos de tus Proveedores</p>
+          <a href={% url 'crear_proveedor' %} class="btn btn-primary d-grid gap-2">Ingresar Proveedor</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6">
+      <div class="card shadow p-3 mb-5 bg-info rounded text-center text-dark text-uppercase">
+        <div class="card-body">
+          <h5 class="card-title fs-4">Cotiza Repuestos</h5>
+          <p class="card-text">Solicita los repuestos que no Consigas.</p>
+          <a href={% url 'bajo_pedido' %} class="btn btn-primary d-grid gap-2">Repuestos</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <!--**********************************************************************************
+    * seccion busqueda
+**********************************************************************************************-->
+<p class="text-uppercase m-3 text-center fs-3" style="box-shadow: 0px 0px 10px 0px #333 inset;">Busqueda de reparacion por cliente</p>
+
+<section>
+    <form>
+        <div class="input-group input-group-sm mb-3 mt-4 ">
+            <input name="q" type="text" class="form-control" placeholder="buscar por Cliente">
+            <button class="btn btn-secondary"><i class="fas fa-search"></i><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+              <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+            </svg></button>
+            <a href={% url 'buscar' %}  class="btn btn-dark" style="margin-left: 2px;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eraser" viewBox="0 0 16 16">
+              <path d="M8.086 2.207a2 2 0 0 1 2.828 0l3.879 3.879a2 2 0 0 1 0 2.828l-5.5 5.5A2 2 0 0 1 7.879 15H5.12a2 2 0 0 1-1.414-.586l-2.5-2.5a2 2 0 0 1 0-2.828l6.879-6.879zm2.121.707a1 1 0 0 0-1.414 0L4.16 7.547l5.293 5.293 4.633-4.633a1 1 0 0 0 0-1.414l-3.879-3.879zM8.746 13.547 3.453 8.254 1.914 9.793a1 1 0 0 0 0 1.414l2.5 2.5a1 1 0 0 0 .707.293H7.88a1 1 0 0 0 .707-.293l.16-.16z"/>
+            </svg></a>
+        </div>
+    </form>     
+    
+    </center>
+        <table class="table table-bordered table-sm mt-4" style="text-align: center; fron-size: 14px; color: white">
+            <thead class="table-info">
+                <tr>
+                    <th>Orden</th>
+                    <th>Fecha</th>
+                    <th>cliente</th>
+                    <th>WhatsApp</th>
+                    <th>Marca</th>
+                    <th>Modelo</th>
+                    <th>Imei</th>
+                    <th>Falla</th>
+                    <th>Precio</th>
+                    <th>Estado</th>
+                  
+                    <th colspan="3">Opciones</th>
+                    
+                    
+                </tr>
+            </thead>
+            {% for reparacion in all_reparacion_list %}    
+            <tr> 
+                <td>{{ reparacion.id }}</td>
+                <td>{{ reparacion.fecha }}</td>
+                <td>{{ reparacion.cliente }}</td>
+                <td>{{ reparacion.whatsApp }}</td>
+                <td>{{ reparacion.marca }}</td>
+                <td>{{ reparacion.modelo }}</td>
+                <td>{{ reparacion.imei }}</td>
+                <td>{{ reparacion.falla }}</td>
+                <td>{{ reparacion.precio }}</td>
+                <td>{{ reparacion.estado }}</td>
+                
+                <td style="background-color:#fff">
+                  <a href={% url 'editar_ingreso' reparacion.id %}><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
+                    <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
+                    <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z"/>
+                  </svg></a>
+                  <a href={% url 'eliminar_ingreso' reparacion.id %}><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">
+                    <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z"/>
+                    <path fill-rule="evenodd" d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z"/>
+                  </svg></a> 
+                  <a href={% url 'mostrar_ingreso' reparacion.id %}><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
+                    <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"/>
+                    <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"/>
+                  </svg></a>
+                </td>
+                
+
+                
+            {% endfor %}
+            </tr>
+        </table>
+    </center>
+
+    
+    
+
+        <div class="my-4>
+            {% if reparacion.has_other_pages %}
+            <ul class="pagination justify-content-left">
+                {% if reparacion.has_previus %}
+                <a href="?page=1" class="btn btn-outline-primary mb-4" style="width:60px; border-radius: 1px; border: 1px solid #d3d3d3;First></a>
+                <li class="page-item"><a class="page-link" href="?page={{ reparacion.previous_page_number }}"><i class="fas fa-angle-double-left"></i>
+                {% else %}
+                <li class="page-item disabled"></li>
+                {% endif %}
+
+                {% for i in reparacion.paginator.page_range %}
+                    {% if reparacion.number == i %}
+                    <li class="page-item active"><span class="page-link">{{ i }}<spam class="sr-only"></spam></spam></li>
+                    {% else %}
+                    <li class="page-item"><a class="page-link" href="?page"={{ i }}>{{ i }}</a></li>
+                    {% endif %}
+                {% endfor %}
+
+                {% if reparacion.has_next %}
+                <li class="page-item"><a class="page-link" href="?page={{ reparacion.next_page_number }}"><i class="fas fa-angle-double-right"></i></a></li>
+                <a href="#" class="btn btn-outline-primary mb-4" style="width: 60px; border-radius: 1px; border: 1px solid #d3d3d3; border-left: 2px"></a>
+                {% else %}
+                <li class="page-item disabled"></li>
+                {% endif %}
+
+            {% endif %}            
+
+                <a></a>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <a></a>
+            </ul>
+        </div>    
+        <hr>
+       
+</section>
+
+<script>
+  const tlLoader = gsap.timeline()
+  tlLoader
+        .set('.titulo', { yPercent: 100 })
+
+        .set('.titulo', { 
+            yPercent: -100,
+        })
+        .to('.titulo',{
+            yPercent: 0,
+            duration: 1,
+            stagger: 0.25,
+        })
+       
+ 
+</script>
+          
+         
+{% endblock %}
